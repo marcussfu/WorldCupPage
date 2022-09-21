@@ -138,9 +138,16 @@ video {
     align-items: center;
 }
 
+.vertical {
+    border-left: 1px solid white;
+    height: 55px;
+    position: absolute;
+    left: 50%;
+}
+
 table, th, td {
     text-align: center;
-    padding: 3px 0;
+    /* padding: 3px 0; */
 }
 
 th {
