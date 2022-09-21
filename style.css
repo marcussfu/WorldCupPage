@@ -1,0 +1,180 @@
+.item1 { 
+    grid-area: header;
+    text-align: center;
+    background-image: url('img/headerBackground.png');
+}
+.item2 { 
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img/leftBackground.png');
+}
+
+.item3 { 
+    grid-area: main;
+    background-image: url('img/mainBackground.png');
+}
+
+.item4 {
+    grid-area: group;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-image: url('img/groupBackground.png');
+}
+
+.item5 {
+    grid-area: promotion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-image: url('img/promotionBackground.png');
+}
+
+.item6 {
+    grid-area: schedule;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    background-image: url('img/scheduleBackground.png');
+}
+
+.item7 { 
+    grid-area: comment;
+    text-align: center;
+    background-image: url('img/commentBackground.png');
+}
+
+.item8 { 
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img/rightBackground.png');
+}
+
+.videoContent {
+    text-align: center;
+    background-image: url('img/videoBackground.png');
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+} 
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "main" "group" "promotion" "schedule" "comment" "left" "right";     
+    gap: 10px;
+    padding: 10px;
+    background-color: #2196F3;
+}
+
+.countDownContainer {
+    text-align: center;
+}
+
+.countDownContent {
+    font-size: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.countDownText {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(206, 98, 66);
+}
+
+.ad {
+    background-color: red;
+    height: 200px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.introContent {
+    padding: 10px;
+}
+
+.introText {
+    font-size: 14px;
+}
+
+video {
+    width: 70%;
+    height: auto;
+}
+
+#winner td {
+    background-color: rgb(242, 254, 215);
+}
+
+.winnerVotedColor {
+    background-color: rgb(171, 251, 156) !important;
+}
+
+.outColor {
+    background-color: rgb(223, 223, 252);
+}
+
+.paddingTop10 {
+    padding-top: 10px;
+}
+
+.countDownHintTextColor {
+    color: rgb(103, 137, 210);
+}
+
+.title_td {
+    display: flex;
+    align-items: center;
+}
+
+.v1 {
+    border-left: 6px solid green;
+    margin-left: 20px;
+    width: 30px;
+}
+
+table, th, td {
+    text-align: center;
+    padding: 3px 0;
+}
+
+th {
+    background-color: rgb(234, 236, 240);
+}
+
+table {
+    border-spacing: 0px;
+    border: 0px solid transparent;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: minmax(auto, 250px) minmax(250px, 1fr) minmax(auto, 250px);
+        grid-template-rows: min-content 1fr min-content;
+        grid-template-areas: "header header header"
+                            "left main right"
+                            "left group right"
+                            "left promotion right"
+                            "left schedule right"
+                            "left comment right";  
+    }
+
+    .item2 {
+        align-items: flex-end;
+    }
+
+    .item8 {
+        align-items: flex-start;
+    }
+}
