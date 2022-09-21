@@ -138,12 +138,6 @@ video {
     align-items: center;
 }
 
-.v1 {
-    border-left: 6px solid green;
-    margin-left: 20px;
-    width: 30px;
-}
-
 table, th, td {
     text-align: center;
     padding: 3px 0;
