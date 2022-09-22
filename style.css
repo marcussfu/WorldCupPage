@@ -21,7 +21,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    padding-bottom: 20px;
     background-image: url('img/groupBackground.png');
 }
 
@@ -101,11 +102,7 @@
 }
 
 .introContent {
-    padding: 10px;
-}
-
-.introText {
-    font-size: 14px;
+    padding: 20px 10px;
 }
 
 video {
@@ -140,7 +137,7 @@ video {
 
 .vertical {
     border-left: 1px solid white;
-    height: 55px;
+    height: 65px;
     position: absolute;
     left: 50%;
 }
