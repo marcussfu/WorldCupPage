@@ -107,6 +107,27 @@
     margin-bottom: 10px;
 }
 
+.commentItem {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin: 4px;
+    padding: 4px;
+}
+
+.commentIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.commentText {
+    text-align: start;
+    font-size: 14px;
+}
+
 video {
     width: 70%;
     height: auto;
