@@ -179,6 +179,11 @@ video {
     align-items: center;
 }
 
+.horizontalAdSection > a img {
+    width:100%;
+    height: 50px;
+}
+
 table, th, td {
     text-align: center;
     /* padding: 3px 0; */
