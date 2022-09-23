@@ -47,6 +47,7 @@
 .item7 { 
     grid-area: comment;
     text-align: center;
+    padding: 20px 0;
     background-image: url('img/commentBackground.png');
 }
 
@@ -63,6 +64,11 @@
     background-image: url('img/videoBackground.png');
 }
 
+.introContent {
+    padding: 20px 10px;
+    background-image: url('img/introBackground.png');
+}
+
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 30px;
@@ -71,7 +77,7 @@
 .grid-container {
     min-height: 100vh;
     display: grid;
-    grid-template-areas: "header" "main" "group" "promotion" "schedule" "comment" "left" "right";     
+    grid-template-areas: "header" "main" "left" "right";     
     gap: 10px;
     padding: 10px;
     background-color: #2196F3;
@@ -99,10 +105,6 @@
     height: 200px;
     width: 60%;
     margin-bottom: 10px;
-}
-
-.introContent {
-    padding: 20px 10px;
 }
 
 video {
@@ -161,11 +163,7 @@ table {
         grid-template-columns: minmax(auto, 250px) minmax(250px, 1fr) minmax(auto, 250px);
         grid-template-rows: min-content 1fr min-content;
         grid-template-areas: "header header header"
-                            "left main right"
-                            "left group right"
-                            "left promotion right"
-                            "left schedule right"
-                            "left comment right";  
+                            "left main right";  
     }
 
     .item2 {

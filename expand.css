@@ -21,7 +21,19 @@
     color:  #fff;
     cursor: pointer;
 }
-.btn::after{
+.btn1{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 16px;
+    padding: 0 8px;
+    background: #3F51B5;
+    border-radius: 4px;
+    color:  #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+.btn::after, .btn1::after{
     content:'展开'
 }
 .exp{
@@ -33,16 +45,19 @@
 .exp:checked+.text::after{
     visibility: hidden;
 }
-.exp:checked+.text .btn::before{
+.exp:checked+.text .btn::before, .exp:checked+.text .btn1::before{
     visibility: hidden;
 }
-.exp:checked+.text .btn::after{
+.exp:checked+.text .btn::after, .exp:checked+.text .btn1::after{
     content:'收起'
 }
-.btn::before{
+/* .btn::before, .btn1::before{
     content: '...';
     position: absolute;
     left: -5px;
     color: #333;
     transform: translateX(-100%)
-}
+} */
+
+
+
