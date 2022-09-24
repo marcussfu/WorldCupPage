@@ -1,13 +1,21 @@
-.text {
+.text, .introText{
     font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: justify;
     position: relative;
     line-height: 1.5;
-    max-height: 4.5em;
     transition: .3s max-height;
 }
+
+.text{
+    max-height: 4.5em;
+}
+
+.introText{
+    max-height: 16.5em;
+}
+
 .btn{
     position: relative;
     float: right;
@@ -39,16 +47,16 @@
 .exp{
     display: none;
 }
-.exp:checked+.text{
+.exp:checked+.text, .exp:checked+.introText{
     max-height: none;
 }
-.exp:checked+.text::after{
+.exp:checked+.text::after, .exp:checked+.introText::after{
     visibility: hidden;
 }
-.exp:checked+.text .btn::before, .exp:checked+.text .btn1::before{
+.exp:checked+.text .btn::before, .exp:checked+.introText .btn::before, .exp:checked+.text .btn1::before{
     visibility: hidden;
 }
-.exp:checked+.text .btn::after, .exp:checked+.text .btn1::after{
+.exp:checked+.text .btn::after, .exp:checked+.introText .btn::after, .exp:checked+.text .btn1::after{
     content:'收起'
 }
 /* .btn::before, .btn1::before{
